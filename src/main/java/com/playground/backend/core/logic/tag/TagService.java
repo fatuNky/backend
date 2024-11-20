@@ -1,6 +1,6 @@
 package com.playground.backend.core.logic.tag;
 
-import com.playground.backend.core.logic.model.Tag;
+import com.playground.backend.core.model.Tag;
 import com.playground.backend.outbound.database.tag.TagRepository;
 import java.util.List;
 import org.springframework.stereotype.Service;

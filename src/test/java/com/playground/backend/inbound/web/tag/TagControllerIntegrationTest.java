@@ -8,9 +8,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.playground.backend.core.logic.model.Tag;
+import com.playground.backend.core.model.Tag;
 import com.playground.backend.core.logic.tag.TagService;
-import com.playground.backend.inbound.web.item.ItemDto;
 import com.playground.backend.outbound.database.tag.TagRepositoryJpa;
 import com.playground.backend.utils.DbHelper;
 import org.junit.jupiter.api.AfterEach;

@@ -1,12 +1,10 @@
 package com.playground.backend.outbound.database.item;
 
-import com.playground.backend.core.logic.model.Item;
-import com.playground.backend.core.logic.model.Tag;
-import com.playground.backend.core.model.OfferEntity;
+import com.playground.backend.core.model.Item;
+import com.playground.backend.core.model.Tag;
 import com.playground.backend.outbound.database.tag.TagEntity;
 import java.util.List;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
 @Mapper
@@ -22,7 +20,7 @@ public interface ItemDbMapper {
 
   Tag fromEntity(TagEntity tagEntity);
 
-  List<TagEntity> foo(List<Tag> tags);
+  List<TagEntity> toTagEntityList(List<Tag> tags);
 
 
 }

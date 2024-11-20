@@ -1,6 +1,6 @@
 package com.playground.backend.outbound.database.item;
 
-import com.playground.backend.core.logic.model.Item;
+import com.playground.backend.core.model.Item;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.stereotype.Repository;
@@ -56,7 +56,6 @@ public class ItemRepository {
     existingItem.setPrice(newItemDetails.getPrice());
     existingItem.setCondition(newItemDetails.getCondition());
     existingItem.setDateAdded(newItemDetails.getDateAdded());
-    existingItem.setCategoryEntity(null); //newItemDetails.getCategoryEntity()
-    existingItem.setTags(itemDbMapper.foo(newItemDetails.getTags()));
+    existingItem.setTags(itemDbMapper.toTagEntityList(newItemDetails.getTags()));
   }
 }

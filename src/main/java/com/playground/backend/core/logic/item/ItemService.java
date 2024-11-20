@@ -1,6 +1,6 @@
 package com.playground.backend.core.logic.item;
 
-import com.playground.backend.core.logic.model.Item;
+import com.playground.backend.core.model.Item;
 import com.playground.backend.outbound.database.item.ItemRepository;
 import java.util.List;
 import org.springframework.stereotype.Service;

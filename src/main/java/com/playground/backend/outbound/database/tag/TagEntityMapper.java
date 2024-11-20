@@ -1,6 +1,6 @@
 package com.playground.backend.outbound.database.tag;
 
-import com.playground.backend.core.logic.model.Tag;
+import com.playground.backend.core.model.Tag;
 import java.util.List;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
@@ -13,8 +13,6 @@ public interface TagEntityMapper {
   TagEntity toEntity(Tag tag);
 
   Tag fromEntity(TagEntity tagEntity);
-
-  List<TagEntity> toEntityList(List<Tag> tags);
 
   List<Tag> fromEntityList(List<TagEntity> tagEntities);
 }

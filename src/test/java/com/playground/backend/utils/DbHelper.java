@@ -1,14 +1,12 @@
 package com.playground.backend.utils;
 
-import com.playground.backend.core.logic.model.Item;
-import com.playground.backend.core.logic.model.Tag;
+import com.playground.backend.core.model.Item;
+import com.playground.backend.core.model.Tag;
 import com.playground.backend.inbound.web.item.ItemDto;
 import com.playground.backend.inbound.web.tag.TagDto;
 import com.playground.backend.outbound.database.item.ItemEntity;
 import com.playground.backend.outbound.database.tag.TagEntity;
 import java.time.Instant;
-import java.time.LocalDate;
-import java.util.List;
 
 public class DbHelper {
 

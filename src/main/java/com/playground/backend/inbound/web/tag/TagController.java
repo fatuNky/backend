@@ -1,6 +1,6 @@
 package com.playground.backend.inbound.web.tag;
 
-import com.playground.backend.core.logic.model.Tag;
+import com.playground.backend.core.model.Tag;
 import com.playground.backend.core.logic.tag.TagService;
 import io.swagger.v3.oas.annotations.Operation;
 

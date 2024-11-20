@@ -1,4 +1,4 @@
-package com.playground.backend.core.logic.model;
+package com.playground.backend.core.model;
 
 
 import java.util.List;

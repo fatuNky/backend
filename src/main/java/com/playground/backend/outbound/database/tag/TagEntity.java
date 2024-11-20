@@ -28,7 +28,4 @@ public class TagEntity {
   private Long id;
 
   private String name;
-
-  @ManyToMany(mappedBy = "tags")
-  private List<ItemEntity> items;
 }

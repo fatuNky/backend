@@ -2,15 +2,10 @@ package com.playground.backend.inbound.web.item;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.playground.backend.core.logic.model.Tag;
-import com.playground.backend.core.model.CategoryEntity;
-import com.playground.backend.core.model.OfferEntity;
 import com.playground.backend.inbound.web.tag.TagDto;
-import com.playground.backend.outbound.database.tag.TagEntity;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.media.Schema.RequiredMode;
 import java.time.Instant;
-import java.time.LocalDate;
 import java.util.List;
 import lombok.Builder;
 import lombok.Data;

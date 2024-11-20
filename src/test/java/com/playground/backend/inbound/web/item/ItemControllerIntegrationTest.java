@@ -9,7 +9,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.playground.backend.core.logic.item.ItemService;
-import com.playground.backend.core.logic.model.Item;
+import com.playground.backend.core.model.Item;
 import com.playground.backend.outbound.database.item.ItemRepositoryJpa;
 import com.playground.backend.utils.DbHelper;
 import org.junit.jupiter.api.AfterEach;

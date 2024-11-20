@@ -1,6 +1,6 @@
 package com.playground.backend.inbound.web.tag;
 
-import com.playground.backend.core.logic.model.Tag;
+import com.playground.backend.core.model.Tag;
 import java.util.List;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;

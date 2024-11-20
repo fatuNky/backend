@@ -1,7 +1,6 @@
 package com.playground.backend.inbound.web.item;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.playground.backend.core.logic.model.Item;
+import com.playground.backend.core.model.Item;
 import com.playground.backend.core.logic.item.ItemService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -19,12 +18,10 @@ public class ItemController {
 
   private final ItemService itemService;
   private final ItemDtoMapper itemDtoMapper;
-  private final ObjectMapper objectMapper;
 
-  public ItemController(final ItemService itemService, final ItemDtoMapper itemDtoMapper, final ObjectMapper objectMapper) {
+  public ItemController(final ItemService itemService, final ItemDtoMapper itemDtoMapper) {
     this.itemService = itemService;
     this.itemDtoMapper = itemDtoMapper;
-    this.objectMapper = objectMapper;
   }
 
   @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
